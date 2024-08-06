@@ -237,6 +237,10 @@ margin-bottom: 72px;
     
 }
 
+.assortment-portfolio {
+    margin-bottom: 8px;
+}
+
 .team-descr {
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
