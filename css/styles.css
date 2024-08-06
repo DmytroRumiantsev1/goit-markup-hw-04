@@ -32,6 +32,10 @@ a {
     overflow: hidden;
   }
 
+  img {
+    display: block;
+  }
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -147,6 +151,7 @@ text-align: center;
 color: #fff;
 margin: 0 auto;
 margin-bottom: 48px;
+max-width: 496px;
 }
 
 .hero-btn {
@@ -160,6 +165,8 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 color: #fff;
 height: 56px;
+min-width: 169px;
+border: none;
 }
 
 .hero-btn:hover ,
@@ -206,6 +213,7 @@ color: #434455;
 .our-team {
     background-color: #f4f4fd;
     margin-bottom: 108px;
+    padding: 120px 0;
 }
 
 .team-descr {
@@ -226,10 +234,12 @@ margin-bottom: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
+    
 }
 
 .team-descr {
     width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
 }
 
 .employees {
@@ -242,10 +252,11 @@ color: #2e2f42;
 margin-bottom: 8px;
 }
 .name {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding: 32px 0;
+    margin-bottom: 8px;
 
 }
+
 
 .job-title {
 font-weight: 400;
@@ -269,15 +280,21 @@ color: #2e2f42;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    
+}
+
+.our-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portf-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 
 
 
-
-.descr-portfolio {
-border-bottom: 1px solid #e7e9fc;
-}
 
 .portfolio {
     margin-bottom: 120px;
@@ -299,8 +316,8 @@ color: #f4f4fd;
 }
 
 .footer-logo {
-    display: inline;
-    padding-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px; 
 }
 
 /* #endregion section footer */
