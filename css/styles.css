@@ -98,6 +98,12 @@ color: #4d5ae5;
     gap: 40px;
 }
 
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 .nav-link {
 display: block;
 padding: 24px 0;    
@@ -236,6 +242,23 @@ letter-spacing: 0.02em;
 color: #434455;
 margin: 0;
 }
+
+.description-page {
+    display: flex;
+    gap: 24px;
+}
+
+.descr-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+}
 /* #endregion section about */
 /* #region section our team */
 
@@ -283,7 +306,7 @@ align-items: center;
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: blue;
+background-color: #4d5ae5;
 }
 
 .assortment-portfolio {
@@ -293,6 +316,8 @@ background-color: blue;
 .team-descr {
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 
 .employees {
@@ -342,10 +367,15 @@ color: #434455;
     column-gap: 24px;
     row-gap: 48px;
     
+    
 }
 
 .descr-portfolio {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16)
+    , 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
     width: calc((100% - 48px) / 3);
+    
 }
 
 .portf-name {
@@ -358,6 +388,33 @@ border-top: none;
 .portfolio {
 padding-top: 120px; 
 padding-bottom: 120px;
+}
+
+.descr-text {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.descr-portfolio:hover .descr-text {
+    transform: translateY(0);
+
+}
+
+.descr-portfolio-pic {
+    position: relative;
+    overflow: hidden;
 }
 
 /* #endregion section portfolio */
@@ -379,6 +436,27 @@ color: #f4f4fd;
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px; 
+}
+
+.footer-paragraf {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+}
+
+.footer-container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-detail {
+    margin-left: 120px;
 }
 
 /* #endregion section footer */
